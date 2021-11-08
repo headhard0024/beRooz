@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.activity.ActivitySplash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lay"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="0dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            app:cardCornerRadius="500dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layRoot"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/material_size_32"
+                android:src="@drawable/splash"
+                android:visibility="invisible" />
+        </androidx.cardview.widget.CardView>
+
+<!--        <TextView-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_18sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_margin="@dimen/_8dp"-->
+<!--            android:text="قدرت گرفته از فید خبری اینتا"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
